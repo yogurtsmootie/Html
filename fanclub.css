@@ -12,7 +12,7 @@
 }
 body {
     font-family: 'Pretendard-Regular';
-    background-image: url(https://yogurtsmootie.github.io/Html/img/bg3.jpg);
+    background-image: url(https://yogurtsmootie.github.io/html/img/bg3.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 
 }
 .container {
-    background-image: url(https://yogurtsmootie.github.io/Html/img/bg2.jpg);
+    background-image: url(https://yogurtsmootie.github.io/html/img/bg2.jpg);
     background-size: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
