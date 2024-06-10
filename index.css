@@ -145,39 +145,39 @@ iframe {
 /*   푸터 영역    */
 /******************/
 
-footer {
-  width: calc(100% - 80px); /* 예: 양쪽 여백 합 80px */
-  max-width: 1400px; /* 더 큰 최대 너비 */
-  height: 150px;
-  padding: 20px;
-  margin: 0 auto; /* 수평 가운데 정렬 */
-  position: relative;
-  display: flex;
-  justify-content: space-between; /* 요소 간 여백 분배 */
-}
-
-.bottom {
-  width: 70%;
-}
-
-.sns {
-  width: 30%;
-}
-
-.sns ul {
-  display: flex; /* ul 내부의 li 요소들을 가로로 배치 */
-  list-style: none; /* 기본 목록 스타일 제거 */
-  margin: 0; /* 외부 여백 제거 */
-  padding: 0; /* 내부 여백 제거 */
-  line-height: 150px;
-  opacity: 0.4;
-}
-
-.sns ul li {
-  margin-left: 20px;
-}
-
-p {
-  margin-bottom: 4px;
-  font-size: 13px;
-}
+  footer {
+    width: 100%;
+    max-width: 1800px; /* 더 큰 최대 너비 */
+    height: 150px;
+    padding: 20px;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* 요소 간 여백 분배 */
+  }
+  
+  .bottom {
+    width: 80%;
+  }
+  
+  .sns {
+    width: 20%;
+  }
+  
+  .sns ul {
+    display: flex; /* ul 내부의 li 요소들을 가로로 배치 */
+    list-style: none; /* 기본 목록 스타일 제거 */
+    margin: 0; /* 외부 여백 제거 */
+    padding: 0; /* 내부 여백 제거 */
+    line-height: 150px;
+    opacity: 0.4;
+  }
+  
+  .sns ul li {
+    margin-left: 20px;
+  }
+  
+  p {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
