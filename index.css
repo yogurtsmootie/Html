@@ -181,8 +181,8 @@
   
   .sns {
     margin: 0; /* 마진 제거 */
+    padding-right: 20px;
     padding-top: 20px; /* 패딩 제거 */
-    padding-right: 20px
     line-height: 150px; /* 라인 높이 설정 */
     opacity: 0.4; /* 투명도 */
     justify-content: flex-end; /* 오른쪽 정렬 */
