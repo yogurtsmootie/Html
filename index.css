@@ -52,21 +52,23 @@
   
   header {
     width: 100%; /* 전체 너비 */
+    max-width: 1800px; /* 더 큰 최대 너비 */
     height: 100px; /* 고정 높이 */
     display: flex; /* Flexbox 레이아웃 사용 */
-    justify-content: space-between; /* 로고와 내비게이션 사이에 공간 분배 */
+    justify-content: space-between; /* 요소 간 여백을 균등하게 분배 */
     align-items: center; /* 수직 중앙 정렬 */
     padding: 0 20px; /* 좌우 여백 */
+    margin: 0 auto;
     box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
   }
   
   /* 로고 스타일 */
   #logo {
-    display: flex; /* Flexbox 사용하여 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    width: 200px; /* 초기 너비 설정 (반응형 조정 예정) */
+    width: auto; /* 자동 너비 */
     height: 100%; /* 부모 요소 높이에 맞춤 */
-    padding-left: 10px; /* 좌측 여백 */
+    display: flex;
+    align-items: center; /* 로고 텍스트 수직 중앙 정렬 */
+    margin: 0; /* 중앙 정렬을 위한 여백 제거 */
   }
   
   #logo a {
@@ -80,6 +82,7 @@
   nav {
     display: flex; /* Flexbox 사용하여 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
+    width: auto;
   }
   
   #topMenu {
@@ -146,6 +149,7 @@
   
   #contents{  
     width:100%;   /* 너비 */
+    max-width: 1800px; /* 더 큰 최대 너비 */
     height: 653px;
     background-color:#f0bf59; 
     align-items: center;
@@ -168,7 +172,6 @@
     height: 150px;
     padding: 20px;
     margin: 0 auto; /* 수평 가운데 정렬 */
-    position: relative;
     display: flex;
     justify-content: space-between; /* 요소 간 여백 분배 */
   }
