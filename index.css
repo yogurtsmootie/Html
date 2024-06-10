@@ -33,7 +33,7 @@
   /*      전체      */
   /******************/
 
-  body {background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg);}
+  body {background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg);} /* 배경 설정 */
   
   * {
     margin:0;   /* 기본 마진 제거 */
