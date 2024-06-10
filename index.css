@@ -1,4 +1,4 @@
- /******************/
+/******************/
   /*      폰트      */
   /******************/
   @font-face {
@@ -121,8 +121,8 @@
   #topMenu > li > ul {
     display: none; /* 기본적으로 숨김 */
     position: absolute; /* 절대 위치 */
-    width: 160px; /* 서브 메뉴 너비 */
-    left: 0; /* 왼족 정렬 */
+    width: 100px; /* 서브 메뉴 너비 */
+    left: -18px;
     background: rgba(255, 255, 255, 0.6); /* 반투명 배경 */
     z-index: 10;  /* 보여지는 순서 설정 */
     border-radius: 15px;  /* 둥근 모서리 */
@@ -154,7 +154,6 @@
   #contents{  
     width:100%;   /* 너비 */
     height: 653px; /* 높이 */
-    background-color:#f0bf59;  /* 배경색 */
     display: flex; /* 레이아웃 */
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
