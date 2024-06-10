@@ -1,4 +1,4 @@
-  /******************/
+ /******************/
   /*      폰트      */
   /******************/
   @font-face {
@@ -33,7 +33,7 @@
   /*      전체      */
   /******************/
 
-  body {background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg);} /* 배경 설정 */
+  body {background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg);}
   
   * {
     margin:0;   /* 기본 마진 제거 */
@@ -180,20 +180,15 @@
     justify-content: space-between; /* 요소 간 여백 균등 분배 */
   }
   
-  .sns ul {
-    display: flex; /* ul 내부의 li 요소들을 가로로 배치 */
-    list-style: none; /* 기본 목록 스타일 제거 */
+  .sns {
     margin: 0; /* 마진 제거 */
-    padding: 0; /* 패딩 제거 */
+    padding-top: 20px; /* 패딩 제거 */
     line-height: 150px; /* 라인 높이 설정 */
     opacity: 0.4; /* 투명도 */
     justify-content: flex-end; /* 오른쪽 정렬 */
   }
-  
-  .sns ul li {
-    margin-left: 20px; /* 왼쪽 여백 */
-  }
-  
+  .sns > a {padding-left: 20px;}
+
   p {
     margin-bottom: 4px; /* 단락 간격 설정 */
     font-size: 13px;
