@@ -146,8 +146,8 @@ iframe {
 /******************/
 
 footer {
-  width: calc(100% - 40px); /* 양쪽 여백 합 40px을 제외한 너비 */
-  max-width: 1200px; /* 최대 너비 설정 */
+  width: calc(100% - 80px); /* 예: 양쪽 여백 합 80px */
+  max-width: 1400px; /* 더 큰 최대 너비 */
   height: 150px;
   padding: 20px;
   margin: 0 auto; /* 수평 가운데 정렬 */
