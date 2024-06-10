@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: space-between; /* 여백을 균등하게 분배 */
+}
+img {
+    width: 300px;
+    height: 200px;
+}
+
+
+li {
+    list-style: none;
+    display: inline;
+}
