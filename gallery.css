@@ -10,19 +10,19 @@ body {
 
 .container {
   width: 100%;
-  height: 98%;
+  height: 99%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 45px;
+  padding-left: 33px;
   padding-top: 3px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   width: 1800px;
   height: 100%;
   justify-content: center; /* 수평 중앙 정렬 */
@@ -30,13 +30,13 @@ body {
 }
 
 img {
-  width: 300px;
-  height: 180px;
+  width: 218px;
+  height: 290px;
   object-fit: cover;
   border-radius: 20px;
   outline: solid #e7d241;
 }
 
 img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
