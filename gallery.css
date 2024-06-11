@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-image: url(https://yogurtsmootie.github.io/html/img/bg7.jpg);
 }
 
 .container {
@@ -32,4 +32,10 @@ img {
   width: 300px;
   height: 200px;
   object-fit: cover;
+  border-radius: 20px;
+  outline: solid #e7d241;
+}
+
+img:hover {
+  opacity: 80%;
 }
