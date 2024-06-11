@@ -17,6 +17,11 @@ body {
     color: rgb(02, 07, 15);
     background-image: url(https://yogurtsmootie.github.io/html/img/bg4.jpg);
 }
+
+a {
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
 img {
     width: 500px;
 }
