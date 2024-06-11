@@ -1,20 +1,35 @@
 @font-face {
-    font-family: 'Ownglyph_ryuttung-Rg';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+    font-family: 'Ownglyph_ryurue-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryurue-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Cafe24Syongsyong';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    max-height: 1800px;
     margin: 0;
-    font-family: 'Ownglyph_ryuttung-Rg';
-    font-size: 25px;
+    padding: 0;
     background-image: url(https://yogurtsmootie.github.io/html/img/bg4.jpg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 350px 300px;
+    width: 95%;
+    height: 653px;
 }
 
 a {
@@ -22,18 +37,31 @@ a {
   color: rgb(02, 07, 15);
 }
 
-img {
-    width: 500px;
-}
 .left {
-    float: left;
-    margin-right: 50px;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    grid-row: 1 / span 2;
+
 }
-.container {
-    float: right;
-    text-align: center;
+
+/******* 상단 *******/
+.top {
+    grid-column: 2;
 }
+
+p {
+    font-family: "Cafe24Syongsyong";
+    font-weight: bolder;
+    font-size: 65px;
+    color: salmon;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
 .up, .down {
+    font-family: 'Ownglyph_ryurue-Rg';
+    font-size: 25px;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -49,6 +77,51 @@ hr {
     border-top: 3px solid salmon;
     width: 100%;
     margin: 10px 0;
+}
+
+/******* 하단 *******/
+.bottom {
+    font-family: 'Cafe24Syongsyong';
+    padding-top: 20px;
+    grid-column: 2;
+    font-size: 23px;
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 60px;
+    color: salmon;
+}
+
+span {
+    color: #f8f8f8;
+    font-size: 40px;
+    margin-left: 10px;}
+
+dl {
+    font-family: 'Ownglyph_ryurue-Rg';
+    color: #fff;
+    font-size: 100%;
+    width: 100%;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+dt {
+    padding-top: 7px;
+    line-height: 1.4;
+    float: left;
+    width: 5%;
+    color: #888;
+    font-size: 1em;
+}
+
+dd {
+    line-height: 1.4;
+    float: left;
+    width: 40%;
+    color: #fff;
+    font-size: 1.5em;
 }
 
 /*마우스 오버*/
