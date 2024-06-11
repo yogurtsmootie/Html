@@ -14,12 +14,12 @@ body {
     margin: 0;
     font-family: 'Ownglyph_ryuttung-Rg';
     font-size: 25px;
-    color: rgb(02, 07, 15);
     background-image: url(https://yogurtsmootie.github.io/html/img/bg4.jpg);
 }
 
 a {
   text-decoration: none; /* 링크 밑줄 제거 */
+  color: rgb(02, 07, 15);
 }
 
 img {
