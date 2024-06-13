@@ -14,21 +14,19 @@ img {
 
 .container {
     display: flex;
-    max-height: 653px;
-    max-width: 1800px;
     margin: 0;
     padding: 0;
+    width: 1800px;
+    height: 653px;
 }
 .right-column {
     float: left;
-    height: 653px;
-    width: 490px;
+    width: 489.75px;
 }
 .left-column {
     float: left;
-    height: 653px;
-    width: 1300px;
-    padding: 10px 0 0 11px;
+    width: 1308px;
+    margin: auto;
 }
 .row:after {
     content: "";
