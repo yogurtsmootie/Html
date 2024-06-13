@@ -197,7 +197,7 @@ nav {
 
 #contents {
   width: 100%; /* 너비 */
-  height: 653px; /* 높이 */
+  height: 773px; /* 높이 */
   display: flex; /* 레이아웃 */
   justify-content: center; /* 수평 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
@@ -216,8 +216,9 @@ nav {
 footer {
   width: 100%; /* 푸터 너비 전체화면 설정 */
   max-width: 1800px; /* 더 큰 최대 너비 */
-  height: 150px; /* 높이 */
-  padding: 20px; /* 패딩 설정 */
+  height: 50px; /* 높이 */
+  line-height: 50px; /* 라인 높이 설정 */
+  padding: 10px 20px 20px 20px; /* 패딩 설정 */
   margin: 0 auto; /* 수평 가운데 정렬 */
   display: flex; /* 레이아웃 */
   justify-content: space-between; /* 요소 간 여백 균등 분배 */
@@ -233,10 +234,8 @@ footer {
 }
 .sns {
   margin: 0; /* 마진 제거 */
-  padding-right: 20px;
-  padding-top: 20px; /* 패딩 제거 */
-  line-height: 150px; /* 라인 높이 설정 */
-  opacity: 0.4; /* 투명도 */
+  line-height: 50px; /* 라인 높이 설정 */
+  opacity: 0.3; /* 투명도 */
   justify-content: flex-end; /* 오른쪽 정렬 */
 }
 .sns > a {
@@ -246,4 +245,9 @@ footer {
 p {
   margin-bottom: 4px; /* 단락 간격 설정 */
   font-size: 13px;
+}
+
+.sns > a > img {
+  width: 40px;
+  height: 40px;
 }
