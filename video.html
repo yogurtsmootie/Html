@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd1.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd1.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd1.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd1.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd1.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd1.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd2.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd2.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd2.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd2.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+        <div class="thumbnail" onclick="playVideo('https://yogurtsmootie.github.io/html/img/vd2.mp4')">
+            <video src="https://yogurtsmootie.github.io/html/img/vd2.mp4" muted></video>
+            <img src="https://yogurtsmootie.github.io/html/img/video/play.png" alt="Play Button" class="play-button">
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer" onclick="closeVideoByClickOutside(event)">
+        <video controls id="videoElement">
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="video.js"></script>
+</body>
+</html>

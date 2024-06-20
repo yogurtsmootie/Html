@@ -18,32 +18,35 @@ img {
   padding: 0;
   height: 100%;
   width: 1800px;
-  max-height: 770px; /* 높이 고정 */
+  max-height: 770px;
+}
+
+.right-column,
+.left-column {
+  height: 770px;
 }
 
 .right-column {
-  width: 577.5px; /* 고정된 넓이 */
-  height: 770px; /* 고정된 높이 */
-  margin-left: 10px;
-  margin-right: 20px;
+  width: 577.5px;
+  margin: 0 20px 0 10px;
   padding: 23px 18px 18px 18px;
 }
+
 .right-column img {
   border-radius: 30px;
   outline: 5px solid #e7d241;
 }
 
 .left-column {
-  width: 1180px; /* 고정된 넓이 */
-  height: 770px; /* 고정된 높이 */
+  width: 1180px;
   display: flex;
-  flex-wrap: wrap; /* 여러 줄로 나눠 배치 */
-  align-content: flex-start; /* 위쪽부터 채우도록 설정 */
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .column {
-  flex: 3 100 15%; /* 한 줄에 6개의 이미지가 배치되도록 설정 */
-  padding: 13px 5px 0px 0px;
+  flex: 3 100 15%;
+  padding: 13px 5px 0 0;
 }
 
 .column img {
@@ -57,7 +60,7 @@ img {
 }
 
 .demo {
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .active,
@@ -75,15 +78,12 @@ img {
   font-weight: bold;
   font-size: 20px;
   top: 44%;
-  border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
   z-index: 10;
 }
 
 .next {
-  left: 528px; /* 버튼 위치 조정 */
-  border-radius: 3px 0 0 3px;
+  left: 528px;
 }
 
 .prev:hover,
@@ -97,4 +97,12 @@ img {
 
 .cursor {
   cursor: pointer;
+}
+
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  border-radius: 0 3px 3px 0;
 }

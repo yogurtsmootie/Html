@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://yogurtsmootie.github.io/html/img/bg6.jpg);
+}
+
+.container {
+    width: 1780px;
+    height: 765px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.thumbnail {
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.thumbnail video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover video {
+    opacity: 1;
+}
+
+.thumbnail:hover .play-button {
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.video-player {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://yogurtsmootie.github.io/html/img/bg8.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+video {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
