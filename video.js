@@ -5,6 +5,7 @@ function playVideo(videoSrc) {
     
     videoSource.src = videoSrc;
     videoElement.load();
+    videoElement.muted = true; // 비디오 음소거
     videoElement.play();  // 비디오 자동 재생
     videoPlayer.style.display = 'block';
 }
