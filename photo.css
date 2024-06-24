@@ -1,3 +1,4 @@
+/* 전체 */
 body {
   margin: 0;
   padding: 0;
@@ -12,32 +13,64 @@ img {
   vertical-align: middle;
 }
 
+/* 컨테이너 */
 .container {
   display: flex;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 1800px;
-  max-height: 770px;
-}
-
-.right-column,
-.left-column {
   height: 770px;
 }
 
-.right-column {
+/* 좌측 */
+.left {
   width: 577.5px;
   margin: 0 20px 0 10px;
   padding: 23px 18px 18px 18px;
 }
 
-.right-column img {
+.left img {
   border-radius: 30px;
   outline: 5px solid #e7d241;
 }
 
-.left-column {
+/* 이미지 슬라이더 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  top: 44%;
+  user-select: none;
+  z-index: 10;
+}
+
+.next {
+  left: 528px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mySlides {
+  display: none;
+}
+
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  border-radius: 0 3px 3px 0;
+}
+
+/* 우측 */
+.right {
   width: 1180px;
   display: flex;
   flex-wrap: wrap;
@@ -61,48 +94,9 @@ img {
 
 .demo {
   opacity: 0.65;
+  cursor: pointer;
 }
 
-.active,
-.demo:hover {
+.active, .demo:hover {
   opacity: 1;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  top: 44%;
-  user-select: none;
-  z-index: 10;
-}
-
-.next {
-  left: 528px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-.next {
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  border-radius: 0 3px 3px 0;
 }

@@ -1,15 +1,18 @@
+/* 폰트 */
 @font-face {
-    font-family: 'Cafe24Meongi-B-v1.0'; /* 멍이 - 로고 */
+    font-family: 'Cafe24Meongi-B-v1.0'; /* 제목 폰트 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-B-v1.0.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 @font-face {
-    font-family: 'Pretendard-Regular'; /* 프리텐다드 */
+    font-family: 'Pretendard-Regular'; /* 본문 폰트 */
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
+
+/* 전체 */
 body {
     font-family: 'Pretendard-Regular';
     background-image: url(https://yogurtsmootie.github.io/html/img/bg3.jpg);
@@ -19,6 +22,8 @@ body {
     margin: 0;
 
 }
+
+/* 컨테이너 */
 .container {
     background-image: url(https://yogurtsmootie.github.io/html/img/bg2.jpg);
     background-size: 1200px;
@@ -26,6 +31,8 @@ body {
     border-radius: 20px;
     width: 1200px;
 }
+
+/* 제목 */
 #head {
     font-family: 'Cafe24Meongi-B-v1.0';
     color: #5EA152;
@@ -34,19 +41,15 @@ body {
     padding-top: 50px;
     margin-bottom: 20px;
 }
+
+/* 폼 */
 form {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
     margin-right: 200px;
 }
-form input[type="text"],
-form input[type="password"],
-form input[type="name"],
-form input[type="date"],
-form input[type="email"],
-form select,
-form input[type="tel"] {
+form input[type="text"], form input[type="password"], form input[type="name"], form input[type="date"], form input[type="email"], form select, form input[type="tel"] {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;

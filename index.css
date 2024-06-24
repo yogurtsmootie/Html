@@ -1,104 +1,80 @@
-/******************/
-/*      폰트      */
-/******************/
+/* 폰트 */
 @font-face {
-  font-family: "Cafe24Meongi-B-v1.0"; /* 멍이 - 로고 */
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-B-v1.0.woff2")
-    format("woff2");
+  font-family: "Cafe24Meongi-B-v1.0"; /* 로고 폰트 */
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-B-v1.0.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Cafe24Moyamoya-Regular-v1.0";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MangoDdobak-B"; /* 망고보드 또박체 */
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Pretendard-Regular"; /* 프리텐다드 */
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  font-family: "Pretendard-Regular"; /* 본문 폰트 */
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-/******************/
-/*      전체      */
-/******************/
-
+/* 전체 */
 body {
-  background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg);
+  background-image: url(https://yogurtsmootie.github.io/html/img/bg1.jpg); /* 배경 이미지 */
 }
 
 * {
-  margin: 0; /* 기본 마진 제거 */
-  padding: 0; /* 기본 패딩 제거 */
-  box-sizing: border-box; /* 테두리까지 포함 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
   font-family: "Pretendard-Regular";
+  font-size: 13px;
 }
+
 a {
   text-decoration: none; /* 링크 밑줄 제거 */
 }
+
 ul {
   list-style: none; /* 목록 스타일 제거 */
 }
 
 #container {
   margin: auto; /* 중앙 정렬 */
-  width: 1800; /* 페이지 전체 너비 */
-  height: 900px; /* 페이지 전체 높이 */
+  width: 1800px;
+  height: 900px;
 }
 
-/*********************************/
-/* 헤더 영역 - 로고와 내비게이션 */
-/*********************************/
-
+/* 헤더 스타일 */
 header {
-  width: 100%; /* 전체로 설정 */
-  max-width: 1800px; /* 최대 너비 */
-  height: 100px; /* 고정 높이 */
+  width: 100%;
+  max-width: 1800px;
+  height: 100px;
   display: flex; /* Flexbox 레이아웃 사용 */
   justify-content: space-between; /* 여백을 균등하게 분배 */
   align-items: center; /* 수직 중앙 정렬 */
-  padding: 0 20px; /* 좌우 패딩 여백 */
+  padding: 0 20px;
   margin: 0 auto; /* 수평 중앙 정렬 */
   box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
 }
 
 /* 로고 스타일 */
-
 #logo {
-  width: auto; /* 자동 너비 조정 */
-  height: 100%; /* 부모 요소 높이에 맞춤 */
-  display: flex;
+  width: 30%;
+  height: 100%;
+  display: flex; 
   align-items: center; /* 로고 텍스트 수직 중앙 정렬 */
-  margin: 10px 0 0 0; /* 여백 제거 */
+  margin: 10px 0 0 0;
+  padding-left: 20px;
 }
 
 #logo > a {
-  display: flex;
+  display: flex; /* Flexbox 레이아웃 */
 }
 
+/* 로고 애니메이션 */
 @keyframes lotate {
   0% {
     transform: rotate(0deg);
   }
-
   50% {
     transform: rotate(180deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -109,11 +85,11 @@ header {
 #lg3,
 #lg4 {
   font-family: "Cafe24Meongi-B-v1.0";
-  font-size: 6.5em; /* 로고 글자 크기 */
-  color: #e7d241; /* 글자 색상 */
-  text-shadow: 5px 5px 0px white, -5px -5px 0px white, 5px -5px 0px white,
-    -5px 5px 0px white;
+  font-size: 6.5em;
+  color: #e7d241;
+  text-shadow: 5px 5px 0px white, -5px -5px 0px white, 5px -5px 0px white, -5px 5px 0px white; /* 글자 그림자 */
 }
+
 #lg1 {
   animation: lotate 4.5s normal;
 }
@@ -125,22 +101,24 @@ header {
 #lg3 {
   animation: lotate 3s normal;
 }
+
 #lg4 {
   animation: lotate 4s alternate-reverse;
 }
 
-/* 내비게이션 스타일 */
+/* 네비게이션 스타일 */
 nav {
-  display: flex; /* Flexbox 사용하여 중앙 정렬 */
+  display: flex; /* Flexbox 레이아웃 */
+  justify-content: flex-end; /* 오른쪽 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
-  width: auto; /* 자동 너비 */
+  width: 70%;
 }
 
 #topMenu {
-  display: flex; /* Flexbox 사용하여 메뉴 항목 가로 배치 */
+  display: flex; /* Flexbox 레이아웃 */
   list-style: none; /* 목록 스타일 제거 */
-  padding: 0; /* 패딩 제거 */
-  margin: 0; /* 마진 제거 */
+  padding: 0;
+  margin: 0;
 }
 
 #topMenu > li {
@@ -151,91 +129,81 @@ nav {
 #topMenu > li > a {
   display: block; /* 블록 요소로 변경 */
   color: rgb(2, 7, 15);
-  font-weight: 600; /* 글자 굵기 */
-  padding: 20px 10px; /* 패딩 */
-  text-decoration: none; /* 링크 밑줄 제거 */
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 10px;
 }
 
 #topMenu > li > a:hover {
-  color: #ffffff; /* 마우스 오버 시 색상 변경 */
+  color: #ffffff;
 }
 
 /* 서브 메뉴 스타일 */
 #topMenu > li > ul {
   display: none; /* 기본적으로 숨김 */
   position: absolute; /* 절대 위치 */
-  width: 100px; /* 서브 메뉴 너비 */
-  left: -18px;
-  background: rgba(255, 255, 255, 0.6); /* 반투명 배경 */
+  width: 100px;
+  left: -18px; /* 왼쪽 위치 */
+  background: rgba(255, 255, 255, 0.6);
   z-index: 10; /* 보여지는 순서 설정 */
-  border-radius: 15px; /* 둥근 모서리 */
+  border-radius: 15px;
 }
 
 #topMenu > li > ul > li {
-  padding: 10px; /* 패딩 설정 */
-  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 10px;
+  text-align: center;
 }
 
 #topMenu > li > ul > li > a {
-  font-size: 14px; /* 글자 크기 */
-  color: rgb(2, 7, 15); /* 텍스트 색상 */
-  text-decoration: none; /* 링크 밑줄 제거 */
+  font-size: 14px;
+  color: rgb(2, 7, 15);
 }
 
 #topMenu > li:hover > ul {
-  display: block; /* 마우스 오버 시 서브 메뉴 */
+  display: block; /* 마우스 오버 시 서브 메뉴 표시 */
 }
 
 #topMenu > li > ul > li > a:hover {
-  color: #7bac5a; /* 마우스 오버 시 글자 색상 변경 */
+  color: #7bac5a;
   font-weight: bold;
 }
 
-/**************************************/
-/*   콘텐츠 영역  - 탭 메뉴와 퀵 링크 */
-/**************************************/
-
+/* 본문 - 아이프레임 스타일 */
 #contents {
-  width: 100%; /* 너비 */
-  height: 773px; /* 높이 */
-  display: flex; /* 레이아웃 */
+  width: 100%;
+  height: 773px;
+  display: flex; /* Flexbox 레이아웃 */
   justify-content: center; /* 수평 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
 }
 
 #main {
-  width: 1800px; /* 너비 */
-  height: 100%; /* 높이 */
-  border: none; /* iframe 테두리 제거 */
+  width: 1800px;
+  height: 100%;
+  border: none; /* 아이프레임 테두리 제거 */
 }
 
-/******************/
-/*   푸터 영역    */
-/******************/
-
+/* 푸터 스타일 */
 footer {
-  width: 100%; /* 푸터 너비 전체화면 설정 */
-  max-width: 1800px; /* 더 큰 최대 너비 */
-  height: 50px; /* 높이 */
-  line-height: 50px; /* 라인 높이 설정 */
-  padding: 10px 20px 20px 20px; /* 패딩 설정 */
+  width: 100%;
+  max-width: 1800px;
+  height: 80px;
   margin: 0 auto; /* 수평 가운데 정렬 */
-  display: flex; /* 레이아웃 */
+  display: flex; /* Flexbox 레이아웃 */
   justify-content: space-between; /* 요소 간 여백 균등 분배 */
+  align-items: center; /* 수직 중앙 정렬 */
+  padding: 0 40px;
 }
+
 .sns {
-  margin: 0; /* 마진 제거 */
-  line-height: 50px; /* 라인 높이 설정 */
-  opacity: 0.3; /* 투명도 */
+  display: flex; /* Flexbox 레이아웃 */
   justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  opacity: 0.3;
 }
+
 .sns > a {
   padding-left: 20px;
-}
-
-p {
-  margin-bottom: 4px; /* 단락 간격 설정 */
-  font-size: 13px;
 }
 
 .sns > a > img {
